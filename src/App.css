@@ -1,5 +1,28 @@
+:root {
+  --bg-color: #212738;
+  --fg-color: #b07156;
+  --text-color: #ffffff;
+  --secondary-color: #838e83;
+  --tertiary-color: #6a994e;
+}
+
 .App {
   text-align: center;
+  background-color: var(--bg-color);
+}
+
+.subtext {
+  font-size: small;
+}
+
+.header {
+  margin: 0;
+}
+
+p,
+span,
+a {
+  color: var(--text-color);
 }
 
 .App-logo {
@@ -31,9 +54,9 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(10px)
+    transform: translateY(10px);
   }
   100% {
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
 }
