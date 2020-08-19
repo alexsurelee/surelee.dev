@@ -16,6 +16,11 @@ function App() {
           <Button onClick={() => window.open("mailto:alex@surelee.dev")}>
             Email
           </Button>
+          <Button
+            onClick={() => window.open("https://linkedin.com/in/alexsurelee")}
+          >
+            LinkedIn
+          </Button>
           <Button>Portfolio</Button>
         </ButtonGroup>
       </header>
