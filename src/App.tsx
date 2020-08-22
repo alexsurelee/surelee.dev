@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} alt="surelee logo" />
-        <p className="header">Alexander Lee</p>
         <p className="subtext">@alexsurelee</p>
         <ButtonGroup variant="text">
           <Button onClick={() => window.open("https://github.com/alexsurelee")}>
