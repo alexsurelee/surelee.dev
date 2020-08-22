@@ -19,6 +19,10 @@
   margin: 0;
 }
 
+.navBar {
+  color: var(--text-color);
+}
+
 p,
 span,
 a {
