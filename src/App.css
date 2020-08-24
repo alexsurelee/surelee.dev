@@ -27,6 +27,7 @@ p,
 span,
 a {
   color: var(--text-color);
+  text-decoration: none;
 }
 
 .App-logo {

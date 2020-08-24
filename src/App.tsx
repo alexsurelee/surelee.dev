@@ -5,6 +5,7 @@ import AppBar from "@material-ui/core/AppBar";
 import MenuIcon from "@material-ui/icons/Menu";
 import logo from "./assets/surelee256.png";
 import "./App.css";
+import "mailgo/dist/mailgo.min.js";
 import { Toolbar, IconButton, Typography } from "@material-ui/core";
 
 function App() {
@@ -27,8 +28,15 @@ function App() {
           <Button onClick={() => window.open("https://github.com/alexsurelee")}>
             GitHub
           </Button>
-          <Button onClick={() => window.open("mailto:alex@surelee.dev")}>
-            Email
+          <Button>
+            <a
+              href="#mailgo"
+              data-address="alex"
+              data-domain="surelee.dev"
+              className="dark"
+            >
+              Email
+            </a>
           </Button>
           <Button
             onClick={() => window.open("https://linkedin.com/in/alexsurelee")}
