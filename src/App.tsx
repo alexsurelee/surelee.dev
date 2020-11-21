@@ -6,25 +6,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>ALEXANDER LEE</p>
-        <p className="subtext">@alexsurelee</p>
+        <h1>ALEXANDER LEE</h1>
         <div className="button-group">
-          <button onClick={() => window.open("https://github.com/alexsurelee")}>
-            GitHub
-          </button>
+          <a href="https://github.com/alexsurelee">GITHUB</a>
           <a
             href="#mailgo"
             data-address="alex"
             data-domain="surelee.dev"
             className="dark"
           >
-            Email
+            EMAIL
           </a>
-          <button
-            onClick={() => window.open("https://linkedin.com/in/alexsurelee")}
-          >
-            LinkedIn
-          </button>
+          <a href="https://linkedin.com/in/alexsurelee">LINKEDIN</a>
         </div>
       </header>
     </div>

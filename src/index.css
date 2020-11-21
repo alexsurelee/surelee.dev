@@ -4,16 +4,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-p {
+p,
+h1,
+a {
   font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.button-group button {
-  border: 1px gray;
-  background-color: darkslategray;
+.button-group a {
+  padding: 5px;
 }
