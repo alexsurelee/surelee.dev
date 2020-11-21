@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
-import "mailgo/dist/mailgo.min.js";
+import mailgo from "mailgo";
 
 function App() {
+  useEffect(() => mailgo());
+
   return (
     <div className="App">
       <header className="App-header">
