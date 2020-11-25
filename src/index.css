@@ -1,16 +1,13 @@
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  -moz-osx-font-smoothing: grayscale; }
 
 p,
 h1,
 a {
   font-family: "Montserrat", sans-serif;
-  color: white;
-}
+  color: white; }
 
 .button-group a {
-  padding: 5px;
-}
+  padding: 5px; }
