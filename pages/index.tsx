@@ -14,8 +14,8 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>Alexander Lee</h1>
 
-        <p className={styles.description}>
-          Custom website packages, tailored for you.
+        {/* <p className={styles.description}>
+          Portfolio coming soon...
         </p>
 
         <div className={styles.grid}>
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
             <h2>LinkedIn &rarr;</h2>
             <p>Check out my journey so far, and connect with me!</p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer className={styles.footer}>
