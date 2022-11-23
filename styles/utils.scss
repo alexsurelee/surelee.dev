@@ -1,0 +1,61 @@
+$typing-duration: 3s;
+$background: white;
+
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+  90%,
+  to {
+    width: 0;
+  }
+}
+
+// Typing stopped, blink cursor
+@keyframes blinker {
+  from {
+    border-color: white;
+  }
+  50%,
+  to {
+    border-color: black;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    border-color: black;
+  }
+}
+
+@mixin typewriter($tab-letters) {
+  font-family: Consolas, monospace;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  display: inline;
+  letter-spacing: 3px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-left: 3px solid;
+    background-color: $background;
+    animation: typing $typing-duration 1, blinker 1.5s step-end 3 backwards;
+  }
+
+  @each $letters in $tab-letters {
+    $i: index($tab-letters, $letters);
+    &:nth-child(#{$i}) {
+      animation-delay: $typing-duration * ($i - 1);
+      &::after {
+        animation-delay: $typing-duration * ($i - 1);
+        animation-timing-function: steps(#{$letters}), step-end;
+      }
+    }
+  }
+}
