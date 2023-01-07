@@ -1,10 +1,18 @@
 import * as React from "react";
 import styles from "styles/components/card.module.scss";
 
-export function Card({ children }) {
+export type CardProps = {
+  children: React.ReactNode;
+};
+
+export function Card({ children }: CardProps) {
   return <div className={styles.card}>{children}</div>;
 }
 
-export function CardTitle({ children }) {
+export type CardTitleProps = {
+  children: React.ReactNode;
+};
+
+export function CardTitle({ children }: CardTitleProps) {
   return <span className={styles.title}>{children}</span>;
 }
