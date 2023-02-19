@@ -1,4 +1,5 @@
 import { Card, CardTitle } from "components/Card";
+import { GridContainer } from "components/GridContainer";
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "styles/Home.module.scss";
@@ -14,9 +15,11 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Alexander Lee</h1>
-        <Card>
-          <CardTitle>Yellow</CardTitle>
-        </Card>
+        <GridContainer>
+          <Card>
+            <CardTitle>Technology</CardTitle>
+          </Card>
+        </GridContainer>
       </main>
 
       <footer className={styles.footer}>

@@ -14,5 +14,5 @@ export type CardTitleProps = {
 };
 
 export function CardTitle({ children }: CardTitleProps) {
-  return <span className={styles.title}>{children}</span>;
+  return <h3 className={styles.title}>{children}</h3>;
 }

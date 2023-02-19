@@ -4,8 +4,12 @@
   border-radius: 5px;
   padding: 5px;
   box-shadow: 4px 4px #888888;
+  min-width: 400px;
+  min-height: 200px;
+  justify-content: center;
 }
 
 .title {
   font-weight: bold;
+  margin: unset;
 }
