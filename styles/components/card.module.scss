@@ -1,12 +1,14 @@
 .card {
   display: flex;
   border: 1px solid black;
+  background-color: #f4ecd6;
   border-radius: 5px;
   padding: 5px;
   box-shadow: 4px 4px #888888;
   min-width: 400px;
   min-height: 200px;
   flex-direction: column;
+  color: #0e1116;
 }
 
 .title {

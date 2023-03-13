@@ -1,5 +1,6 @@
 import { Card, CardBody, CardTitle } from "components/Card";
 import { GridContainer } from "components/GridContainer";
+import { Header } from "components/Header";
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "styles/Home.module.scss";
@@ -12,9 +13,8 @@ const Home: NextPage = () => {
         <meta name="description" content="Alexander Lee - Portfolio " />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        <h1 className={styles.title}>Alexander Lee</h1>
-      </header>
+
+      <Header />
 
       <main className={styles.main}>
         <GridContainer>
