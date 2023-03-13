@@ -1,4 +1,4 @@
-import { Card, CardTitle } from "components/Card";
+import { Card, CardBody, CardTitle } from "components/Card";
 import { GridContainer } from "components/GridContainer";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -12,12 +12,19 @@ const Home: NextPage = () => {
         <meta name="description" content="Alexander Lee - Portfolio " />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header>
+        <h1 className={styles.title}>Alexander Lee</h1>
+      </header>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Alexander Lee</h1>
         <GridContainer>
           <Card>
             <CardTitle>Technology</CardTitle>
+            <CardBody>
+              <ul>
+                <li>React</li>
+              </ul>
+            </CardBody>
           </Card>
         </GridContainer>
       </main>

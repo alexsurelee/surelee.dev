@@ -6,10 +6,16 @@
   box-shadow: 4px 4px #888888;
   min-width: 400px;
   min-height: 200px;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .title {
   font-weight: bold;
   margin: unset;
+  align-self: center;
+}
+
+.body {
+  justify-content: left;
+  display: flex;
 }

@@ -16,3 +16,11 @@ export type CardTitleProps = {
 export function CardTitle({ children }: CardTitleProps) {
   return <h3 className={styles.title}>{children}</h3>;
 }
+
+export type CardBodyProps = {
+  children: React.ReactNode;
+};
+
+export function CardBody({ children }: CardBodyProps) {
+  return <div className={styles.body}>{children}</div>;
+}
