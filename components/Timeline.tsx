@@ -12,14 +12,12 @@ export function Timeline({ children }: TimelineProps) {
 
 export type TimelineEntryProps = {
   children: React.ReactNode;
-  date: React.ReactNode;
 };
 
-export function TimelineEntry({ children, date }: TimelineEntryProps) {
-  return (
-    <div className={styles.entry}>
-      {date}
-      {children}
-    </div>
-  );
+export function TimelineEntry({ children }: TimelineEntryProps) {
+  return <div className={styles.entry}>{children}</div>;
+}
+
+export function TimelineDate({ children }: { children: React.ReactNode }) {
+  return <div className={styles.date}>{children}</div>;
 }

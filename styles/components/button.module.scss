@@ -1,0 +1,14 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #386c0b;
+  box-shadow: 2px 2px #888888;
+  &:hover,
+  &:active {
+    background-color: adjust-hue($color: #386c0b, $degrees: 30);
+  }
+}
