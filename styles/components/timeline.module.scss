@@ -1,4 +1,40 @@
 .timeline {
+  display: grid;
+  grid-template-areas: "ruler entries";
+  grid-template-columns: 20px auto;
+}
+
+.entries {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  gap: 10px;
+  grid-area: entries;
+}
+
+.entry {
+  background-color: white;
+  border-radius: 5px;
+  width: 60vw;
+  color: black;
+  padding: 5px;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -1;
+    right: auto;
+    bottom: -1;
+    border-left: -1 solid black;
+    content: "";
+    display: "none";
+  }
+}
+
+.ruler {
+  background-color: red;
+  min-height: 100%;
+  width: 2px;
+  grid-area: ruler;
+}
+
+.date {
 }

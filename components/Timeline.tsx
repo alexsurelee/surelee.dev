@@ -7,7 +7,12 @@ export type TimelineProps = {
 };
 
 export function Timeline({ children }: TimelineProps) {
-  return <div className={styles.timeline}>{children}</div>;
+  return (
+    <div className={styles.timeline}>
+      <div className={styles.ruler} />
+      <div className={styles.entries}>{children}</div>
+    </div>
+  );
 }
 
 export type TimelineEntryProps = {
